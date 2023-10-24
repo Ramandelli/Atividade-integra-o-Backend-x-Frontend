@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="./scripts.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <form class="form-container">
+        <h2>Formulário de Clientes</h2>
+        <div class="input-group">
+            Nome: <input type="text" name="name">
+        </div>
+        <div class="input-group">
+            Sobrenome: <input type="text" name="sobrenome">
+        </div>
+        <div class="input-group">
+            Documento: <input type="text" name="documento">
+        </div>
+    </form>
+
+    <div class="button-container">
+        <button class="action-button" onclick="createClientes()">Cadastrar</button>
+        <button class="action-button" onclick="getClientes()">Refresh</button>
+    </div>
+
+    <div id="message" class="message"></div>
+
+    <div id="clientes-table" style="display: none;">
+        <h2>Clientes Cadastrados</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Sobrenome</th>
+                    <th>Documento</th>
+                </tr>
+            </thead>
+            <tbody id="clientList">
+        
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
